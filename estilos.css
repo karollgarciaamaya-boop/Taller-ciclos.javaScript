@@ -2,14 +2,14 @@
 ESTILOS GENERALES Y VARIABLES (PALETA ROSA)
 ========================================== */
 :root {
-    --color-principal: #ff72ab; /* Rosa vibrante para títulos y elementos destacados */
-    --color-principal-hover: #ff72ab; /* Rosa un poco más oscuro para botones interactivos */
-    --color-secundario: #f48fb1; /* Rosa suave para detalles */
-    --color-fondo-pagina: #fce4ec; /* Fondo suave rosado */
+    --color-principal: #93efff; /* Rosa vibrante para títulos y elementos destacados */
+    --color-principal-hover: #93efff; /* Rosa un poco más oscuro para botones interactivos */
+    --color-secundario: #93efff; /* Rosa suave para detalles */
+    --color-fondo-pagina: #93efff; /* Fondo suave rosado */
     --color-tarjeta: #ffffff; /* Fondo blanco para contraste en secciones */
     --color-texto: #424242; /* Texto oscuro para alta legibilidad */
     --color-borde: #f8bbd0; /* Borde en tono rosa claro */
-    --color-exito: #ad1457; /* Color para resaltar mensajes/resultados */
+    --color-exito: #93efff; /* Color para resaltar mensajes/resultados */
     --fuente: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
