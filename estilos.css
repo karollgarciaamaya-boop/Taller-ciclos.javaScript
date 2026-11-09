@@ -1,0 +1,194 @@
+/* ==========================================
+ESTILOS GENERALES Y VARIABLES (PALETA ROSA)
+========================================== */
+:root {
+    --color-principal: #ff72ab; /* Rosa vibrante para títulos y elementos destacados */
+    --color-principal-hover: #ff72ab; /* Rosa un poco más oscuro para botones interactivos */
+    --color-secundario: #f48fb1; /* Rosa suave para detalles */
+    --color-fondo-pagina: #fce4ec; /* Fondo suave rosado */
+    --color-tarjeta: #ffffff; /* Fondo blanco para contraste en secciones */
+    --color-texto: #424242; /* Texto oscuro para alta legibilidad */
+    --color-borde: #f8bbd0; /* Borde en tono rosa claro */
+    --color-exito: #ad1457; /* Color para resaltar mensajes/resultados */
+    --fuente: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-fondo-pagina);
+    color: var(--color-texto);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ==========================================
+ENCABEZADO Y NAVEGACIÓN
+========================================== */
+header {
+    background-color: var(--color-tarjeta);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.1);
+    margin-bottom: 25px;
+    border-left: 6px solid var(--color-principal);
+}
+
+header h1 {
+    color: var(--color-principal);
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #757575;
+    font-size: 1rem;
+}
+
+header a {
+    display: inline-block;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+header a:hover {
+    color: var(--color-principal-hover);
+}
+
+/* ==========================================
+CONTENIDO PRINCIPAL Y SECCIONES
+========================================== */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background-color: var(--color-tarjeta);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-borde);
+}
+
+section h2 {
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--color-borde);
+    padding-bottom: 8px;
+}
+
+/* Listas y enlaces de los menús (index.html) */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    display: block;
+    padding: 12px 16px;
+    background-color: #f8bbd0;
+    color: #880e4f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+ul li a:hover {
+    background-color: var(--color-secundario);
+    transform: translateX(4px);
+}
+
+/* ==========================================
+FORMULARIOS Y CONTROLES DE ENTRADA
+========================================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #4a148c;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--color-borde);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-principal);
+}
+
+button[type="submit"] {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-principal-hover);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+SECCIÓN DE RESULTADOS
+========================================== */
+#resultado {
+    background-color: #fff0f5;
+    border: 2px dashed var(--color-secundario);
+}
+
+#resultado p {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+#resultado strong {
+    color: var(--color-principal);
+    }
+
+#mensaje {
+    font-weight: bold;
+    color: var(--color-exito);
+    background-color: #f8bbd0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
